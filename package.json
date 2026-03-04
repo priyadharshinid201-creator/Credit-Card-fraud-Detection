@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "concurrently -k \"npm run dev:client\" \"npm run dev:api\"",
+    "dev:api": "python Python/api.py",
+    "dev:client": "npm --prefix Client run dev"
+  },
+  "dependencies": {
+    "papaparse": "^5.5.3",
+    "recharts": "^3.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
